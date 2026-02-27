@@ -2432,31 +2432,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tanne\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/nathanblatter/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tanne\\source\\repos\\Mission08_3_2\\Mission08_3_2\\Mission08_3_2.csproj",
+      "projectUniqueName": "/Users/nathanblatter/RiderProjects/Mission08_3_2/Mission08_3_2.csproj",
       "projectName": "Mission08_3_2",
-      "projectPath": "C:\\Users\\tanne\\source\\repos\\Mission08_3_2\\Mission08_3_2\\Mission08_3_2.csproj",
-      "packagesPath": "C:\\Users\\tanne\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tanne\\source\\repos\\Mission08_3_2\\Mission08_3_2\\obj\\",
+      "projectPath": "/Users/nathanblatter/RiderProjects/Mission08_3_2/Mission08_3_2.csproj",
+      "packagesPath": "/Users/nathanblatter/.nuget/packages/",
+      "outputPath": "/Users/nathanblatter/RiderProjects/Mission08_3_2/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\tanne\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/nathanblatter/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2521,7 +2514,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

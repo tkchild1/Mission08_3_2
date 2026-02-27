@@ -1,0 +1,70 @@
+@model Mission08_3_2.Models.TaskItem
+
+@{
+    bool isEdit = Model.TaskItemId != 0;
+    ViewData["Title"] = isEdit ? "Edit Task" : "Add Task";
+    string formAction = isEdit ? "EditTask" : "AddTask";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+
+        <h2 class="mb-4">@ViewData["Title"]</h2>
+
+        <form asp-controller="Task" asp-action="@formAction" method="post">
+            @Html.AntiForgeryToken()
+
+            @if (isEdit)
+            {
+                <input type="hidden" asp-for="TaskItemId" />
+            }
+
+            <div class="mb-3">
+                <label asp-for="TaskName" class="form-label">Task <span class="text-danger">*</span></label>
+                <input asp-for="TaskName" class="form-control" placeholder="Enter task name..." />
+                <span asp-validation-for="TaskName" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="DueDate" class="form-label">Due Date</label>
+                <input asp-for="DueDate" type="date" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Quadrant" class="form-label">Quadrant <span class="text-danger">*</span></label>
+                <select asp-for="Quadrant" class="form-select">
+                    <option value="">-- Select Quadrant --</option>
+                    <option value="1">Quadrant 1 &ndash; Important / Urgent</option>
+                    <option value="2">Quadrant 2 &ndash; Important / Not Urgent</option>
+                    <option value="3">Quadrant 3 &ndash; Not Important / Urgent</option>
+                    <option value="4">Quadrant 4 &ndash; Not Important / Not Urgent</option>
+                </select>
+                <span asp-validation-for="Quadrant" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="CategoryId" class="form-label">Category <span class="text-danger">*</span></label>
+                <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-select">
+                    <option value="">-- Select Category --</option>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-4 form-check">
+                <input asp-for="Completed" class="form-check-input" />
+                <label asp-for="Completed" class="form-check-label">Completed</label>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary">Save Task</button>
+                <a asp-controller="Task" asp-action="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
