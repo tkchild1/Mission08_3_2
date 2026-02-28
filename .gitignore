@@ -1,0 +1,16 @@
+# Build output
+bin/
+obj/
+artifacts/
+
+# IDE folders
+.vs/
+.idea/
+
+# User-specific files
+*.user
+*.suo
+
+# Local database temp files
+*.sqlite-shm
+*.sqlite-wal

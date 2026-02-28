@@ -42,7 +42,11 @@
                                 @Html.AntiForgeryToken()
                                 <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
                             </form>
-                            @* TODO: Add Mark as Completed button here *@
+                            <form asp-controller="Task" asp-action="MarkComplete" asp-route-id="@task.TaskItemId"
+                                  method="post">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-outline-success">Complete</button>
+                            </form>
                         </div>
                     </div>
                 }
@@ -78,7 +82,11 @@
                                 @Html.AntiForgeryToken()
                                 <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
                             </form>
-                            @* TODO: Add Mark as Completed button here *@
+                            <form asp-controller="Task" asp-action="MarkComplete" asp-route-id="@task.TaskItemId"
+                                  method="post">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-outline-success">Complete</button>
+                            </form>
                         </div>
                     </div>
                 }
@@ -114,7 +122,11 @@
                                 @Html.AntiForgeryToken()
                                 <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
                             </form>
-                            @* TODO: Add Mark as Completed button here *@
+                            <form asp-controller="Task" asp-action="MarkComplete" asp-route-id="@task.TaskItemId"
+                                  method="post">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-outline-success">Complete</button>
+                            </form>
                         </div>
                     </div>
                 }
@@ -150,7 +162,11 @@
                                 @Html.AntiForgeryToken()
                                 <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
                             </form>
-                            @* TODO: Add Mark as Completed button here *@
+                            <form asp-controller="Task" asp-action="MarkComplete" asp-route-id="@task.TaskItemId"
+                                  method="post">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-outline-success">Complete</button>
+                            </form>
                         </div>
                     </div>
                 }
