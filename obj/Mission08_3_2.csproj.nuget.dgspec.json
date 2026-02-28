@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nathanblatter/RiderProjects/Mission08_3_2/Mission08_3_2.csproj": {}
+    "/Users/hirohitomizuno/Documents/IS 413/Mission08_3_2/Mission08_3_2.csproj": {}
   },
   "projects": {
-    "/Users/nathanblatter/RiderProjects/Mission08_3_2/Mission08_3_2.csproj": {
+    "/Users/hirohitomizuno/Documents/IS 413/Mission08_3_2/Mission08_3_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nathanblatter/RiderProjects/Mission08_3_2/Mission08_3_2.csproj",
+        "projectUniqueName": "/Users/hirohitomizuno/Documents/IS 413/Mission08_3_2/Mission08_3_2.csproj",
         "projectName": "Mission08_3_2",
-        "projectPath": "/Users/nathanblatter/RiderProjects/Mission08_3_2/Mission08_3_2.csproj",
-        "packagesPath": "/Users/nathanblatter/.nuget/packages/",
-        "outputPath": "/Users/nathanblatter/RiderProjects/Mission08_3_2/obj/",
+        "projectPath": "/Users/hirohitomizuno/Documents/IS 413/Mission08_3_2/Mission08_3_2.csproj",
+        "packagesPath": "/Users/hirohitomizuno/.nuget/packages/",
+        "outputPath": "/Users/hirohitomizuno/Documents/IS 413/Mission08_3_2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nathanblatter/.nuget/NuGet/NuGet.Config"
+          "/Users/hirohitomizuno/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
