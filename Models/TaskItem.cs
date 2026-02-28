@@ -13,10 +13,10 @@ namespace Mission08_3_2.Models
 
         public DateTime? DueDate { get; set; }
 
-        [Required(ErrorMessage = "Quadrant is required")]
+        [Range(1, 4, ErrorMessage = "Quadrant is required")]
         public int Quadrant { get; set; }
 
-        [Required(ErrorMessage = "Category is required")]
+        [Range(1, int.MaxValue, ErrorMessage = "Category is required")]
         public int CategoryId { get; set; }
 
         public bool Completed { get; set; } = false;
