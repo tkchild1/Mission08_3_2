@@ -88,9 +88,9 @@ namespace Mission08_3_2.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult MarkComplete(int id)
+        public IActionResult MarkComplete(int i)
         {
-            var task = _repo.Tasks.FirstOrDefault(t => t.TaskItemId == id);
+            var task = _repo.Tasks.FirstOrDefault(t => t.TaskItemId == i);
             if (task != null)
             {
                 task.Completed = true;
